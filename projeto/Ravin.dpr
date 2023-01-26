@@ -11,7 +11,23 @@ uses
   UfrmSobre in '..\codigo\formularios\UfrmSobre.pas' {frmSobre},
   UfrmProdutos in '..\codigo\formularios\UfrmProdutos.pas' {frmProdutos},
   UfrmPainelGestao in '..\codigo\formularios\UfrmPainelGestao.pas' {frmPainelGestao},
-  UfrmComandas in '..\codigo\formularios\UfrmComandas.pas' {frmComandas};
+  UfrmComandas in '..\codigo\formularios\UfrmComandas.pas' {frmComandas},
+  UresourceUtils in '..\codigo\Util\UresourceUtils.pas',
+  UfrmLogin in '..\codigo\formularios\UfrmLogin.pas' {frmLogin},
+  UUsuario in '..\codigo\Modelos\UUsuario.pas',
+  UusuarioDao in '..\codigo\Modelos\UusuarioDao.pas',
+  UfrmRegistrar in '..\codigo\formularios\UfrmRegistrar.pas' {frmRegistrar},
+  UfrmBotaoPrimario in '..\codigo\frames\UfrmBotaoPrimario.pas' {frmBotaoPrimario: TFrame},
+  UvalidadorUsuario in '..\codigo\Validadores\UvalidadorUsuario.pas',
+  UiniUtils in '..\codigo\Util\UiniUtils.pas',
+  UfrmTesteBusca in '..\Testes\UfrmTesteBusca.pas' {Form1},
+  UFormUtils in '..\codigo\Util\UFormUtils.pas',
+  UfrmBotaoCancelar in '..\codigo\frames\UfrmBotaoCancelar.pas' {frmBotaoCancelar: TFrame},
+  UfrmBotaoExcluir in '..\codigo\frames\UfrmBotaoExcluir.pas' {frmBotaoExcluir: TFrame},
+  UfrmCadastroCliente in '..\codigo\formularios\UfrmCadastroCliente.pas' {frmCadastroCliente},
+  UfrmListaClientes in '..\codigo\formularios\UfrmListaClientes.pas' {frmListaClientes},
+  UPessoa in '..\codigo\Modelos\UPessoa.pas',
+  UPessoaDao in '..\codigo\Modelos\UPessoaDao.pas';
 
 {$R *.res}
 
@@ -21,10 +37,7 @@ begin
   ReportMemoryLeaksOnShutdown := True;
   Application.CreateForm(TdmRavin, dmRavin);
   Application.CreateForm(TfrmSplash, frmSplash);
-  Application.CreateForm(TfrmMesas, frmMesas);
-  Application.CreateForm(TfrmSobre, frmSobre);
-  Application.CreateForm(TfrmProdutos, frmProdutos);
   Application.CreateForm(TfrmPainelGestao, frmPainelGestao);
-  Application.CreateForm(TfrmComandas, frmComandas);
+  Application.CreateForm(TfrmLogin, frmLogin);
   Application.Run;
 end.

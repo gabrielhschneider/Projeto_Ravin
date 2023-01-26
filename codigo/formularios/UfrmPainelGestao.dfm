@@ -3,7 +3,7 @@ object frmPainelGestao: TfrmPainelGestao
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Dashboard'
-  ClientHeight = 480
+  ClientHeight = 465
   ClientWidth = 640
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,7 +15,7 @@ object frmPainelGestao: TfrmPainelGestao
   Position = poScreenCenter
   DesignSize = (
     640
-    480)
+    465)
   PixelsPerInch = 96
   TextHeight = 13
   object lblPainelGestaoTitulo: TLabel
@@ -60,10 +60,11 @@ object frmPainelGestao: TfrmPainelGestao
     Left = 181
     Top = 349
     Width = 451
-    Height = 123
+    Height = 108
     Anchors = [akLeft, akTop, akRight, akBottom]
     Pen.Color = clWhite
     Shape = stRoundRect
+    ExplicitHeight = 123
   end
   object Shape5: TShape
     Left = 401
@@ -77,7 +78,7 @@ object frmPainelGestao: TfrmPainelGestao
     Left = 0
     Top = 0
     Width = 175
-    Height = 480
+    Height = 465
     Align = alLeft
     BevelOuter = bvNone
     Color = clWhite
@@ -85,7 +86,7 @@ object frmPainelGestao: TfrmPainelGestao
     TabOrder = 0
     DesignSize = (
       175
-      480)
+      465)
     object imgLogomarca: TImage
       Left = 42
       Top = 16
@@ -2330,7 +2331,7 @@ object frmPainelGestao: TfrmPainelGestao
         end
       end
     end
-    inline frmMenuItemPessoas: TfrmMenuItem
+    inline frmMenuItemClientes: TfrmMenuItem
       Left = 0
       Top = 252
       Width = 175
@@ -2339,7 +2340,8 @@ object frmPainelGestao: TfrmPainelGestao
       ExplicitTop = 252
       inherited pnlFundo: TPanel
         inherited lblTitulo: TLabel
-          Caption = 'Pessoas'
+          Caption = 'Clientes'
+          OnClick = frmMenuItemPessoaslblTituloClick
         end
       end
     end
@@ -5716,7 +5718,7 @@ object frmPainelGestao: TfrmPainelGestao
             000049454E44AE426082}
         end
         inherited lblTitulo: TLabel
-          Caption = 'Sair'
+          Caption = 'Deslogar'
           OnClick = frmMenuItemSairlblTituloClick
         end
       end
